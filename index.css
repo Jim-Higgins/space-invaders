@@ -31,7 +31,7 @@ body {
 	bottom: 30px;
 	position: absolute;
 	display: inline;
-	animation: transitionUp 3s linear forwards;
+	/* animation: transitionUp 3s linear forwards; */
 }
 
 @keyframes transitionUp {
