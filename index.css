@@ -1,16 +1,32 @@
 .alien {
-	width: 50px;
-    height: 50px;
-    display: inline-block;
-    margin: 5px;
-    border: 5px;
-    background-color: green;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin: 5px;
+  border: 5px;
 }
 
 body {
-    background-color: black;
-    display: flex;
-    justify-content: center;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
 }
-.row {
+
+.player {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  padding: 10px;
+  bottom: 0;
+  /* display: inline-block; */
+}
+
+.bullet { 
+    width: 50px;
+    height: 100px;
+    position: absolute;
 }
