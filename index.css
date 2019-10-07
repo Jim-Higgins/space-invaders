@@ -1,32 +1,44 @@
 .alien {
-  width: 50px;
-  height: 50px;
-  display: inline-block;
-  margin: 5px;
-  border: 5px;
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	margin: 5px;
+	border: 5px;
 }
 
 body {
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
-  width: 100vw;
-  align-items: center;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	width: 100%;
+	align-items: center;
 }
 
 .player {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  padding: 10px;
-  bottom: 0;
-  /* display: inline-block; */
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	padding: 10px;
+	bottom: 0;
+	display: inline;
 }
 
-.bullet { 
-    width: 50px;
-    height: 100px;
-    position: absolute;
+.bullet {
+	width: 50px;
+	height: 100px;
+	bottom: 30px;
+	position: absolute;
+	display: inline;
+	animation: transitionUp 3s linear forwards;
+}
+
+@keyframes transitionUp {
+	0% {
+		bottom: 35px;
+	}
+	100% {
+		bottom: 100%;
+	}
 }
