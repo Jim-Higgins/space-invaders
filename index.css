@@ -1,0 +1,16 @@
+.alien {
+	width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 5px;
+    border: 5px;
+    background-color: green;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.row {
+}
