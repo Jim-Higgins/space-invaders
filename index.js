@@ -94,19 +94,17 @@ window.onload = () => {
 	const grid = createGridOfAliens();
 	document.body.appendChild(grid);
 	document.body.appendChild(player);
-	var rect = document.getElementById("rect");
-	dragMe = document.getElementById("dragMe");
 
-	initDrag({
-		element: dragMe,
+	initShoot({
+		element: bullet,
 		start: function() {
-			addShadow();
+			fireBullet();
 		},
-		drag: function() {
-			isCollapsed(dragMe, rect);
+		hit: function() {
+			isHit(bullet, aliens);
 		},
 		stop: function() {
-			removeShadow();
+			destroyBullet(bullet, alien);
 		}
 	});
 };
